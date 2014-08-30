@@ -2,9 +2,42 @@
 layout: project
 title: Projects
 ---
--#
-  - @projects.each do |action, description|
-    .section
-      = link_to(action.to_s.gsub('_', ' '), :action => action)
-      .subsection
-        %p= description.html_safe
+
+%ul
+  %li
+    %a(href="/projects/datajockey") Data Jockey
+    %p
+      Data Jockey is a <a href="http://en.wikipedia.org/wiki/FOSS">FLOSS</a>
+      software project, in essence a digital disc jockey tool which
+      leverages audio meta-data (both computed and manually added by the
+      user) in order to allow for new approaches in content selection and
+      juxtaposition. While there are other software tools that allow users
+      to DJ digitally, none focus as heavily on search and comparison
+      between audio works using audio meta-data.
+
+  %li
+    %a(href="/projects/scvim") SCVim
+    %p
+      A collection of scripts that allow for interaction with
+      <a href=\"http://supercollider.sourceforge.net/\">supercollider</a>
+      in <a href=\"http://www.vim.org\">vim</a>.
+
+  %li
+    %a(href="/projects/jackcpp") JackCpp
+    %p
+      These are 2 simple c++ classes that wrap the 
+      <a href="http://jackaudio.org/">jack audio</a> io and lock-free ringbuffer.
+
+  %li
+    %a(href="/projects/xnormidi") xnormidi
+    %p
+      Originally called <i>avr-midi</i> this library has evolved much over time.
+      It is now a relatively device independent library for sending a receiving midi.
+      The target platform is still a microcontroller, but there is no reason it couldn't
+      be useful elsewhere.
+
+  %li
+    %a(href="/projects/evolver_editor") Evolver Editor
+    %p
+      A
+      FLOSS *nix editor for the Dave Smith Instruments Evolver synthesizer.
