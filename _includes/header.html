@@ -1,10 +1,14 @@
 <header class="site-header">
+  {% assign projects = nil %}
+  {% if page.url contains "/projects"/ %}
+    {% assign projects = true %}
+  {% endif %}
   <div class="top-bar">
   <div class="site-nav">
     <div class="trigger">
       {% for link in site.navigation %}
         {% assign pageclass = 'page-link' %}
-        {% if page.url == link.url or page.layout == link.layout %}
+        {% if page.url == link.url or (projects and link.url == "/projects/") %}
           {% assign pageclass = 'page-link-current' %}
         {% endif %}
         <div class="nav-item">
@@ -17,6 +21,19 @@
       {% endfor %}
 			-->
     </div>
+    {% if projects %}
+    <div class="trigger">
+      {% for link in site.projects %}
+        {% assign pageclass = 'page-link' %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign pageclass = 'page-link-current' %}
+        {% endif %}
+        <div class="nav-item">
+          <a class="{{pageclass}}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>
 
