@@ -1,0 +1,150 @@
+
+p,table,li
+{
+}
+
+ul
+{
+  list-style: disc; 
+}
+
+ol
+{
+  list-style: decimal; 
+}
+
+p,li,th,td
+{
+}
+
+body
+{
+  background-image: url("/images/rand.jpg");
+  background-repeat: repeat;
+  background-color: black;
+  font-family: 'times new roman', serif; 
+  font-size: 11pt;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: scroll;
+  color: white;
+}
+
+#page-container {
+  color: white;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  /*
+  min-height: 600px;
+  */
+
+  border: thin;
+  border-style: solid;
+  border-color: gray;
+}
+
+h1,h2,h3,hr 
+{
+  font-family: 'verdana', 'arial', sans-serif; 
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+a {
+  font-family: 'verdana', 'arial', sans-serif; 
+  font-weight: normal;
+}
+
+a:link    {color:white; background-color: black;}
+a:visited {color:white; background-color: black;}
+a:active  {color:gray; background-color: black;}
+a:hover   {color:gray; background-color: black;}
+
+
+.site-nav {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0.1em;
+  word-spacing: 0.3em;
+  float: left;
+}
+
+.nav-item a.page-link-current {
+  color: black;
+  background: white;
+}
+
+#content {
+  clear: both;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  color: white;
+  background-color: black;
+}
+
+div.section {
+}
+
+div.subsection {
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+}
+
+div#main ul {
+  padding: 0;
+  list-style: none;
+}
+
+#home-image {
+  text-align: center;
+  width: 300px;
+  margin-top: 3em;
+  float: left;
+}
+
+#home-info {
+  padding-left: 350px;
+}
+
+.top-bar, .bottom-bar {
+  padding-left: 0.5em;
+  height: 5em;
+  clear: both;
+  font-family: 'verdana', 'arial', sans-serif; 
+}
+
+.top-bar a {
+  font-size: 16pt;
+}
+
+pre {
+  font-size: 9pt;
+  margin: 0;
+}
+

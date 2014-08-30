@@ -1,0 +1,44 @@
+---
+layout: project
+title: xnormidi
+---
+
+%p
+  Originally called 'avr-midi', this C-language midi library has gone
+  through several revisions and as proven to be quite useful for a variety
+  of projects.  I removed the 'avr' because, while my targets have still
+  all been Atmel AVR microcontrollers, I have made an effort to remove
+  the AVR dependencies from this project.
+%p
+  The library provides easy to use midi send functionality and callback
+  based receive.  The library itself does not actually implement the midi
+  transport, instead it provides a method for parsing input and callback
+  registration for sending output.  This way it is relatively easy to send
+  and receive midi over non-standard and standard transports alike.  I have
+  included a
+  %a(href='http://www.fourwalledcubicle.com/LUFA.php' target='_blank') LUFA
+  based USB midi implementation for USB AVRs, and intend to update the serial
+  example for AVR soon.
+%p
+  %h2 License
+  ! {% include flexible_gpl_lib.html %}
+
+%p
+  %h2 How to get it
+  ! {% include get_github.html url='https://github.com/x37v/xnormidi' %}
+%p
+  %h2 Documentation
+  %p
+    You can find the
+    %a(href='http://x37v.github.com/xnormidi/' target ='_blank') doxygen generated documentation here.
+
+%p
+  %h2 Example
+  %p
+    Below is a very simple program taken from the 
+    %a(href='http://www.fourwalledcubicle.com/LUFA.php' target='_blank') LUFA
+    example, which is included in the 'implementations' folder of the
+    'xnormidi' download.  Here we set up the midi device, register some
+    callbacks, send some midi messages, and run the midi process function.
+  %hr
+  ~ CodeRay.scan_file(File.join(File.expand_path(File.dirname(__FILE__)), 'projects/xnormidi/lufa_midi.c'), :c).div

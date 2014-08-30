@@ -1,0 +1,41 @@
+# Site settings
+title: x37v
+email: alex@x37v.info
+description: "Alex Norman's website"
+baseurl: ""
+url: "http://www.x37v.info"
+#twitter_username: jekyllrb
+github_username:  x37v
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#plugins
+#gems: [jekyll-haml]
+gems: [coderay]
+
+git_path: http://git-scm.com/
+gpl_path: http://www.gnu.org/licenses/gpl.html
+
+navigation:
+  - text: "x37v.info"
+    url: "/"
+  - text: "projects"
+    url: "/projects/"
+  - text: "blog"
+    url: "/blog/"
+  - text: "links"
+    url: "/links/"
+
+projects:
+  - text: "datajockey"
+    url: "/projects/datajockey/"
+  - text: "scvim"
+    url: "/projects/scvim/"
+  - text: "jackcpp"
+    url: "/projects/jackcpp/"
+  - text: "xnormidi"
+    url: "/projects/xnormidi/"
+  - text: "evolver editor"
+    url: "/projects/evolver_editor/"

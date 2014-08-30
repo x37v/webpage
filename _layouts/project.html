@@ -1,0 +1,28 @@
+---
+layout: default
+---
+  <div class="site-nav">
+    <div class="trigger">
+      {% for link in site.projects %}
+        {% assign pageclass = 'page-link' %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign pageclass = 'page-link-current' %}
+        {% endif %}
+        <div class="nav-item">
+          <a class="{{pageclass}}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+<div class="project">
+
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+  {{ content }}
+  </article>
+
+</div>

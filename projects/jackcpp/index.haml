@@ -1,0 +1,33 @@
+---
+layout: project
+title: JackCpp
+---
+
+%p
+  Hi, I made some c++ classes which wrap the 
+  %a(href='http://jackaudio.org/') Jack audio
+  io api and lock-free ring buffer.  Works with Linux and OSX 
+  (thanks to
+  %a(href='http://willwolcott.com/') Will Wolcott
+  for OSX testing and example/test file comments).
+
+%p
+  %h2 License
+  ! {% include gpl_lib.html %}
+
+%p
+  %h2 How to get it
+  ! {% include get_github.html url='https://github.com/x37v/jackcpp' %}
+
+%p
+  %h2 Documentation
+  %p
+    View the doxygen generated documentation here:
+    %a(href='http://x37v.github.com/jackcpp/' target='_blank') doc
+%p
+  %h2 Example
+  %p
+    Below is a simple c++ example program that uses this api.  A more in depth
+    example is included in the download.
+  %hr
+  ~ CodeRay.scan_file(File.join(File.expand_path(File.dirname(__FILE__)), 'projects/jackcpp/testjacksimple.cpp'), :cplusplus).div

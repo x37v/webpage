@@ -1,0 +1,61 @@
+---
+layout: default
+title: x37v.info
+---
+-#
+  <div class="home">
+
+    <h1>Posts</h1>
+
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  </div>
+-#
+  #content_left
+    = image_tag('alexjump.jpg')
+#home-image
+  %img(src="images/XOR_111750.gif")
+
+#home-info
+  %p
+    Hi, I'm Alex Norman.
+    %br I am a developer of free/libre open source software for multimedia.  
+
+  %p
+    %h1 Contact Info
+    %ul
+      %li
+        %strong email:
+        alex at this domain name
+      %li
+        %strong irc:
+        ax on irc.freenode.org
+        %ul
+          %li (I am often in #nerd-art, #dorkbotpdx and #lad)
+      %li
+        %strong github:
+        %a(title='x37v' href='http://github.com/x37v')
+      %li
+        %strong jabber:
+        ax@jabber.org
+      %li
+        %strong google talk:
+        x37v.alex
+
+  %p
+    %p
+      My primary interests are in multimedia, particularly audio and music,
+      embedded systems and sensors.
+    %p
+      While I generally want my tools to work on as many platforms as
+      possible, my main platform is Linux and I am especially interested in
+      making applications which make Linux more attractive for artists.

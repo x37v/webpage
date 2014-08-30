@@ -1,0 +1,10 @@
+---
+layout: project
+title: Projects
+---
+-#
+  - @projects.each do |action, description|
+    .section
+      = link_to(action.to_s.gsub('_', ' '), :action => action)
+      .subsection
+        %p= description.html_safe
