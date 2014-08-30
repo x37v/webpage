@@ -105,7 +105,7 @@ a:hover   {color:gray; background-color: black;}
   background: white;
 }
 
-#content {
+.page-content {
   clear: both;
   padding-left: 2em;
   padding-right: 2em;
