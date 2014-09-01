@@ -1,0 +1,26 @@
+---
+layout: post
+title: Toy Guitar Hacked MIDI controller
+published: true
+date: 2011-06-26 21:17:02 -0700
+tags:
+  - hacking
+  - microcontroller
+  - midi
+---
+I found this guitar toy at a thrift store a few months back and decided to hack it in order to make it into a usb-midi controller.
+
+I used a "teensy,":http://www.pjrc.com/teensy/ and library I wrote called "xnormidi,":http://x37v.info/projects/xnormidi which in turn uses "LUFA":http://www.fourwalledcubicle.com/LUFA.php to do the usb layer.
+
+I've placed the code on "github":https://github.com/x37v/toy_guitar_midi if anyone is curious.  It might not be immediately useful but it does provide an example usage of the midi library.  I also have some debouncing code in there that could be pulled into another project.
+
+Interfacing with the toy was actually not very difficult.  Internally it had a microcontroller board that loaded like a slot into another board that had the panel mount buttons and a bus to the neck buttons.  I simply de-soldered and removed that microcontroller board, figured out the addressing scheme of the buttons, which used a typical matrix scanning scheme, and wrote some code drive + read the matrix.  I had some extra I/O so I hooked in the switch and maybe one more button on the body that wasn't driven by the matrix.
+
+All of the buttons except one or two on the body send CC messages, the switch also sends CC messages and when you strum the little "string" things, it sends notes based on the button you're holding on the neck.  It is pretty fun.  So far I've just hooked it into a few synths and messed around..
+
+Here are some photos:
+
+|<a href="http://www.flickr.com/photos/64557428@N08/5870662564/" title="Toy guitar hacked midi controller by xnorman, on Flickr"><img src="http://farm6.static.flickr.com/5142/5870662564_4f480563c7.jpg" width="299" height="500" alt="Toy guitar hacked midi controller"></a>|<a href="http://www.flickr.com/photos/64557428@N08/5870113185/" title="More guts by xnorman, on Flickr"><img src="http://farm6.static.flickr.com/5303/5870113185_996c336787.jpg" width="299" height="500" alt="More guts"></a>|
+|<a href="http://www.flickr.com/photos/64557428@N08/5870668060/" title="Guts of guitar by xnorman, on Flickr"><img src="http://farm7.static.flickr.com/6002/5870668060_65d3b6b0bb.jpg" width="299" height="500" alt="Guts of guitar"></a>|<a href="http://www.flickr.com/photos/64557428@N08/5870665282/" title="Guts with teensy by xnorman, on Flickr"><img src="http://farm4.static.flickr.com/3082/5870665282_24f68631dc.jpg" width="400" height="250" alt="Guts with teensy"></a>|
+
+opps.. a little blury

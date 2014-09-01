@@ -1,0 +1,15 @@
+---
+layout: post
+title: LED Wall PopScience
+published: true
+date: 2013-01-15 19:18:29 -0800
+tags:
+  - video
+  - led
+  - microcontroller
+  - magazine
+---
+Popular Science just published a brief blurb about our "LED wall":http://blog.x37v.info/2012/10/10/led-wall :
+"Bright Ideas: DIY Stage Lights From The 1930s And Today":http://www.popsci.com/gadgets/article/2013-01/bright-ideas-portable-diy-performance-enhancement
+
+They juxtaposed our project with a DIY Stage Lighting project they published a "design":http://books.google.com/books?id=yiUDAAAAMBAJ&lpg=PP1&pg=PA112#v=onepage&q&f=true for in 1937.

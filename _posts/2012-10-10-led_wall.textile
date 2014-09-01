@@ -1,0 +1,58 @@
+---
+layout: post
+title: LED Wall
+published: true
+date: 2012-10-10 09:11:21 -0700
+tags:
+  - video
+  - led
+  - microcontroller
+---
+The band "STRFKR":http://www.polyvinylrecords.com/artists/index.php?id=824 hired Hans Lindauer and me to create a large [13 x 8 ft] low resolution [96 x 64 bright RGB pixels] video display for their live show.
+
+Hans did a wonderful job designing and building the wall and I worked on the software.
+
+We chose to drive the wall with composite video so that the band could hook up a variety of different video sources to the wall.  Basically, anything that outputs composite video should work.  The bulk of the work is done by a small computer running Linux with a composite video to USB adapter for video input and a "teensy":http://www.pjrc.com/teensy/ USB microcontroller to drive the LEDs.  The computer uses "GStreamer":http://gstreamer.freedesktop.org/ to take the video input, convert it from YUYV to RGB, deinterlace it, resize it to 96 x 64, and finally, using a custom video sink, write out data packets to via USB to the _teensy_.
+
+The microcontroller is running a program written by "Paul Stoffregen":http://www.pjrc.com/teensy/ originally for this "domestar":http://www.nycresistor.com/2012/10/05/domestar-in-depth/ project.  The program takes 64 byte USB packets, iterates over each byte and sends out the individual bits to separate serial outputs.  Basically this means you drive 8 serial clock/data lines with each byte, where the 1st bit goes to the 1st clock/data lines, 2nd to the 2nd.. etc.  Besides some basic gamma correction, thresholding to turn the LEDs off when a pixel is close to black [so you get real blacks], the main function of my _GStreamer_ program is to remap the video pixel information for this microcontroller.  The wall consists of 8 separate panels which have a linear array of leds zig-zagging from the bottom left.  This nicely mapped to the 8 data/clock pairs, each pair drives one of the panels.
+
+Here is a picture of a test screen I used while testing it in my living room, before we had the panels in their final state, with the plastic coating removed and what not.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/7924015782/" title="LED wall test by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8458/7924015782_f11b89195b.jpg" width="500" height="299" alt="LED wall test"></a>
+
+Here is the wall being set up:
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/7938422600/" title="LED wall by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8454/7938422600_40f0894030.jpg" width="500" height="299" alt="LED wall"></a>
+
+
+h2. Videos:
+
+First show using the wall, Music Fest Northwest 2012, Pioneer Courthouse Square, Portland, Oregon.
+
+p=. <iframe width="560" height="315" src="http://www.youtube.com/embed/b2MEgw-mAYo" frameborder="0" allowfullscreen></iframe>
+
+Second show using the wall, Regency Ballroom, San Fransisco, California.
+
+p=. <iframe width="560" height="315" src="http://www.youtube.com/embed/zHvlre86HTU" frameborder="0" allowfullscreen></iframe>
+
+Its obviously nicer when its a smaller space and dark.  One of the really nice things about the wall is that the lights can really turn off, most projectors still project some light when they're trying to show blacks.
+
+Here is a music video with shots of the band practicing with the wall.
+
+p=. <iframe width="560" height="315" src="http://www.youtube.com/embed/ofOrjpjfD4c" frameborder="0" allowfullscreen></iframe>
+
+Here is a video with footage from one of their live shows.
+
+p=. <iframe width="560" height="315" src="http://www.youtube.com/embed/v9YZ2uMFE0I" frameborder="0" allowfullscreen></iframe>
+
+h2. More info:
+
+* "Create Digital Motion":http://createdigitalmotion.com/2012/09/shine-an-led-wall-looks-great-tours-easily-and-you-can-build-it-open-source-hardware/ did a writeup on our project.
+* And Hans made a pretty in depth "build log":http://dorkbotpdx.org/blog/armatronix/led_video_wall
+* Here is a link to "the code on github":https://github.com/x37v/led_wall
+* Paul Stoffregen's "teensy":http://www.pjrc.com/teensy/
+
+
+While we were testing it out we watched some of *Tron*:
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/7947404528/" title="Led wall Tron by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8447/7947404528_e138c33702.jpg" width="500" height="299" alt="Led wall Tron"></a>

@@ -1,0 +1,27 @@
+---
+layout: post
+title: Church of Robotron
+published: true
+date: 2013-04-04 01:34:02 -0700
+tags:
+  - hacking
+  - games
+  - dorkbot
+  - led
+  - lights
+---
+Some friends of mine really like *Robotron 2084* and while I'm not a big gamer, it is certainly my favorite video game.  Its simplistic but very difficult and has post apocalyptic robot take over back story that is appealing to nerds like me.
+
+A couple of years 2 or 3 of them decided that they'd like to make a *Church of Robotron*, this was largely driven by "Brian Richardson/BTR,":http://www.knowhere.net/ Elijah St Clair/ES and "Karl Anderson.":http://www.monkey.org/~kra/  Initially Brian intended to turn his house into the church and the first step was to create an altar like box containing a "MAME":http://www.mame.net/ machine where you could play the game and at the same time pray to the mutant savior.  The altar had 2 joysticks, _the two eight ways_, a screen, a button that would start a game, but I don't think it was ever fully realised.  But then "Toorcamp 2012":http://www.toorcamp.org/ came around and a number of people, largely nerds to frequent "Dorkbot PDX":http://www.dorkbotpdx.org in Portland Oregon, joined in, and created the *Mobile Church of Robotron*.  I was one of those nerds.  I identify as _XNOR_ [or _XOR_ when I can only use 3 letters] for this project.
+
+Toorcamp gave us a large dome to house our installation.  It was a really fun project and I'd say probably the centerpiece for the whole conference.  Brian figured out how to detect when various events happened in the game such as enemy fire, player death, etc. and we used those events to trigger actions in the real world like fans, motors flapping things, lights, lasers, etc.  Brian explains how he hooked into the game in a blog entry: "Use MAME's debugger to reverse engineer and extend old games.":http://www.dorkbotpdx.org/blog/skinny/use_mames_debugger_to_reverse_engineer_and_extend_old_games
+
+I worked on a variety of things including: general lighting in the space, sound reenforcement, a kneeler that triggered light fades when you knelt, lights that flashed in your face when you died in the game, playback of "sermon videos,":http://vimeo.com/47605115 and various construction, installation and stage hand like tasks [like stealing power from the main dome].
+
+Our work was featured in "Hack-A-Day":http://hackaday.com/2012/08/20/toorcamp-the-church-of-robotron/ and we have a "webpage for the church":http://churchofrobotron.com/ with a lot of propaganda and a decent amount of real information.
+
+h2. DorkbotPDX 0x0A presentation
+
+On March 25th, 2013 we did a presentation/performance about the church and specifically about the mobile church installation we did at Toorcamp 2012.  We had James Adamson on stage giving sermons which we interspersed with presentations from a variety of people.  The presenters were not actually visible on stage, instead our faces were projected onto one of 4 televisions that were sitting there, a "Dr. O'Blivion":http://www.imdb.com/title/tt0086541/ inspiration.  Mike Wallace captured a video of the presentation which you can see below.
+
+p=. <iframe width="640" height="360" src="http://www.youtube.com/embed/qOjfez0EOR8?rel=0&start=80" frameborder="0" allowfullscreen></iframe>

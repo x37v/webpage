@@ -1,0 +1,26 @@
+---
+layout: post
+title: Synth Panels
+published: true
+date: 2011-06-27 22:21:28 -0700
+tags:
+  - synth
+---
+My friend/roommate "Jesse":http://www.anestheticaudio.com/ and I have been building various modular synthesizer modules for what seems like a year or more now but we have yet to house any of our projects.  We've built some VCOs, VCAs, filters, these things called Lopass Gates, but housing has been a real pain.
+
+Recently I got a new job and now have access to a laser cutter.  It is a lot of fun to play with and is proving to be very nice for making panels for our modules.  So far I've only created a couple of prototypes, to make sure that my measurements are all correct.
+
+Our friend Alex Langeburg designed us some graphics and has helped us with some design considerations.  I'm using "inkscape":http://inkscape.org/ for the layout.
+
+My first prototype used some translucent pink/orange acrylic, I painted it flat black and then etched the paint off and cut it with the laser.  I really like the color but I don't think it'll work well with the rest of the colors I have for jacks, knobs, cabling and what not.
+
+<center>
+<a href="http://www.flickr.com/photos/64557428@N08/5870179165/" title="Pink orange proto by xnorman, on Flickr"><img src="http://farm4.static.flickr.com/3225/5870179165_3f5972062f.jpg" width="299" height="500" alt="Pink orange proto"></a></center>
+
+So I've settled on clear:
+
+<center>
+|<a href="http://www.flickr.com/photos/64557428@N08/5870041239/" title="Synth panel proto by xnorman, on Flickr"><img src="http://farm4.static.flickr.com/3119/5870041239_555d7c6dca.jpg" width="299" height="500" alt="Synth panel proto"></a>|<a href="http://www.flickr.com/photos/64557428@N08/5878532911/" title="Panel rear view by xnorman, on Flickr"><img src="http://farm6.static.flickr.com/5032/5878532911_4200378c4b.jpg" width="158" height="500" alt="Panel rear view"></a>|
+</center>
+
+I think it will look really nice when it is back lit, though the pots cover the graphics, so we'll have to figure out some edge lighting as well.  Eventually I hope to house my project in a suitcase, or something reasonably mobile.

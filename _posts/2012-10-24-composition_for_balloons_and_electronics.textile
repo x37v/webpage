@@ -1,0 +1,79 @@
+---
+layout: post
+title: Composition for Balloons and Electronics
+published: true
+date: 2012-10-24 13:01:05 -0700
+tags:
+  - balloons
+  - electronics
+  - music
+  - lights
+  - led
+---
+p=. <object type="application/x-shockwave-flash" width="400" height="227" data="http://www.flickr.com/apps/video/stewart.swf?v=109786" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=8cb0761afa&photo_id=8113371224"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=109786"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=109786" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=8cb0761afa&photo_id=8113371224" height="227" width="400"></embed></object>
+
+A few months ago "Charles Buckingham":http://tsunamihazardzone.cc/ told me about a crowd participatory composition idea he had where every person in a large crowd would have a smart phone that made sound which they could control, to some extent, that combined would form a work of music.  After we together made several iterations on the idea: reinterpretations, misinterpretations, experimentation, research, etc. the project became a composition idea for a crowd participatory experiment using home made mylar balloons making buzzing tones and clicking sounds with pizeo transducers, lit up with RGB LEDs and finally popped with model rocket igniters and gun powder.
+
+Charles told "Leo Daedalus":http://leodaedalus.com/ about this project and Leo was very interested.  They decided that it would work for Leo's "The Late Now":http://thelatenow.com/ *John Cage Centenary Special*.  This event happened September 20th, 2012 at the _Pacific Northwest College of Art_ in Portland, Oregon.
+
+Charles also told a film maker friend of his, "Eric Macey":https://vimeo.com/user2574689 , about the project and got him to document both the event itself but also a lot of the preparation for the event, which was a huge ordeal that came together in a vary inspiring way with the help of a lot of people in a very short amount of time.  Eric should have a proper video of everything in a bit.
+
+I worked on the electronics design and manufacturing as well as the firmware programming and Charles worked on the balloon research and manufacturing.  We worked together on the arc of the sound, light and small flare/balloon popping composition.
+
+The firmware, which was hacked together quick and sloppy, is in my "balloon pwm":https://github.com/x37v/balloon_pwm github repository.
+
+We used helium to float the balloons.  Helium is very expensive these days because it is becoming more and more scarce.  Charles spent a lot of time trying to find a source that would even guarantee us a tank, because most places these days will only guarantee helium for medical use.  Luckily he eventually found a source but we didn't end up having quite a much as we had hoped.  We originally intended to have 100 balloons, but ended up only being able to manufacture around 75 because we ran out of a key component, and then we only ended up having enough helium to float around 35 of those.  Either way, people really seemed to enjoy it.  I was in a daze from long hours of work and last minute trouble shooting so I'm waiting to see the documentary video in order to have a better feel for the whole thing.
+
+We have plans to revisit the idea with some updated software and more helium as well as a non participatory version with yet another software program and hydrogen filled balloons, which would be highly explosive.
+
+h2. Collaborators
+
+This project wouldn't have been possible without the help of a number of volunteers.  These folks spent a bunch of their time, without payment, really last minute, helping us make, paint and inflate mylar balloons, build the electronics and finally share the piece with the crowd.  It was really tedious work but I was surprised with how much people seemed to enjoy helping.  Even before the piece was presented I felt like it was a success because of the amazing thing that happened when a lot of people got together and worked on an absurd and fun idea like this.  Here is a list of people who helped, I hope I haven't missed anyone:
+
+Jeremy Adams, Alyssa Beers, Chrissie Bishop, Jared Boone, Gary Felix, Marybeth Hall, Kaisa Holt, Morgan Hynson, Alex Langeberg, Jesse Lauzon, Matthew Lippincott, Mike Lyons, Eric Macey, Jesse Mejia, Cole Miller, Kiel Moton, Philip Odom, Paul Parenteau, Jason Plumb, Brian Richardson, Thomas Suprenant, Ami Taylor, Emily Wahl 
+
+h2. Preparation
+
+I have some photos, unfortunately only captured with my cellphone camera so a number of them are blurry, of the electronics preparation.  I'll post some highlights here.
+
+The controller boards.  These boards drove the piezos, leds and rocket igniters and also had a button which those who were holding the board, which was attached to the balloon.  The participators could press the buttons, which are red, in order to manipulate the parameters of the lighting, sound as well as the timing of everything including the rocket igniter which melted a small hole in the balloon in order to, hopefully, make it sink.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8090471693/" title="Balloon boards by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8465/8090471693_f37f861bd8.jpg" width="299" height="500" alt="Balloon boards"></a>
+
+A pile of built boards and ribbon cables.  The ribbon cables went from the boards which people held, to the balloon which had a piezo, RGB LED and rocket igniter taped or glued to it.  The cables acted both as a tether for the balloon and an power/control conduit.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8103653741/" title="wire mess by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8053/8103653741_c5ab111973.jpg" width="500" height="299" alt="wire mess"></a>
+
+Boards with ribbon cables and battery packs, much more neatly arranged:
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8103673772/" title="battery packs and ribbon cables by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8194/8103673772_ee4738c786.jpg" width="500" height="299" alt="battery packs and ribbon cables"></a>
+
+Chrissie, Marybeth and Charles making balloons.  At the top you can see a wooden form that they used as a guide while ironing the balloons.  Photo by Matthew Lippincott.
+
+p=. <a href="http://www.flickr.com/photos/14397636@N07/8104285742/" title="Charles, Marybeth and Chrissy got the balloon assembly line down #heptax by mathew.lippincott, on Flickr"><img src="http://farm9.staticflickr.com/8043/8104285742_0f9efc6046.jpg" width="500" height="500" alt="Charles, Marybeth and Chrissy got the balloon assembly line down #heptax"></a>
+
+All the balloons were ironed by hand.  Here Chrissie is putting in a valve.
+
+p=. <a href="http://www.flickr.com/photos/14397636@N07/8104293162/" title="Chrissy gets the valve in by mathew.lippincott, on Flickr"><img src="http://farm9.staticflickr.com/8045/8104293162_68c811c416.jpg" width="500" height="500" alt="Chrissy gets the valve in"></a>
+
+Here is a balloon with the electronics.  Near the top we have the rocket igniter and gunpowder, near the middle is the piezo buzzer and at the bottom of the balloon, its hard to see because its behind a piece of paper for better reflectance, is the LED.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8107297867/" title="IMAG0028.jpg by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8046/8107297867_cd85b65c50.jpg" width="299" height="500" alt="IMAG0028.jpg"></a>
+
+Here is an unfortunately blurry shot of the rocket igniter and gunpowder on a balloon.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8113375857/" title="blurry igniter + gun powder by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8189/8113375857_6ea189ea47.jpg" width="299" height="500" alt="blurry igniter + gun powder"></a>
+
+Balloons with electronics in the staging areas.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8113382196/" title="IMAG0101 by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8468/8113382196_d54458225d.jpg" width="500" height="299" alt="IMAG0101"></a>
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8113379256/" title="IMAG0087 by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8333/8113379256_f149719d4b.jpg" width="299" height="500" alt="IMAG0087"></a>
+
+A rough sketch of the flow of the piece.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8103891008/" title="score by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8333/8103891008_69d3b2aa1b.jpg" width="500" height="375" alt="score"></a>
+
+Me, exhausted, amongst some of the balloons in a staging area.
+
+p=. <a href="http://www.flickr.com/photos/64557428@N08/8113384732/" title="me + balloons by xnorman, on Flickr"><img src="http://farm9.staticflickr.com/8183/8113384732_b9752d7f4d.jpg" width="299" height="500" alt="me + balloons"></a>
