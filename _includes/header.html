@@ -1,31 +1,29 @@
 <header class="site-header">
-  {% assign projects = nil %}
-  {% if page.url contains "/projects"/ %}
-    {% assign projects = true %}
-  {% endif %}
   <div class="top-bar">
   <div class="site-nav">
     <div class="trigger">
       {% for link in site.navigation %}
         {% assign pageclass = 'page-link' %}
-        {% if page.url == link.url or (projects and link.url == "/projects/") %}
+        {% if (link.url != "/" and page.url contains link.url) %}
+          {% assign pageclass = 'page-link-current' %}
+        {% elsif (link.url == "/" and page.url == "/index.html") %}
           {% assign pageclass = 'page-link-current' %}
         {% endif %}
         <div class="nav-item">
           <a class="{{pageclass}}" href="{{ link.url | prepend: site.baseurl }}">{{ link.text }}</a>
         </div>
       {% endfor %}
-			<!--
+      <!--
       {% for page in pages %}
         {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
       {% endfor %}
-			-->
+      -->
     </div>
-    {% if projects %}
+    {% if page.url contains "/projects/" %}
     <div class="trigger">
       {% for link in site.projects %}
         {% assign pageclass = 'page-link' %}
-        {% if page.url == link.url or page.layout == link.layout %}
+        {% if page.url contains link.url %}
           {% assign pageclass = 'page-link-current' %}
         {% endif %}
         <div class="nav-item">
