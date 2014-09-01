@@ -1,12 +1,12 @@
 ---
 layout: default
-title: blog.x37v.info
+title: Alex's Web Log
 ---
 
 %ul.posts
   {% for post in site.posts %}
   %li
-    %span#post-date{{ post.date | date: "%b %-d, %Y" }}
+    %span#post-date {{ post.date | date: "%b %-d, %Y" }}
     %a#post-link(href="{{ post.url | prepend: site.baseurl }}") {{ post.title }}
   {% endfor %}
 
