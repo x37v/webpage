@@ -20,8 +20,8 @@ p,li,th,td
 #bgcanvas {
 	display: none;
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 body
