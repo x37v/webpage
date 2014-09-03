@@ -17,17 +17,26 @@ p,li,th,td
 {
 }
 
+#bgcanvas {
+	display: none;
+  background: white;
+  width: 200px;
+  height: 200px;
+}
+
 body
 {
-  background-image: url("/images/rand.jpg");
-  background-repeat: repeat;
-  background-color: black;
+  background-color: white;
   font-family: 'times new roman', serif; 
   font-size: 11pt;
   overflow: auto;
   overflow-x: auto;
   overflow-y: scroll;
   color: white;
+}
+
+#body
+{
 }
 
 #page-container {
