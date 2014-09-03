@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Alex's Web Log
+title: x37v blog
 ---
 
 {% for post in site.posts %}
@@ -11,6 +11,7 @@ title: Alex's Web Log
 {: .post-excerpt} 
 
 [read more]({{ post.url | prepend: site.baseurl }})
+<!-- {{ post.tags | join: ', '}} -->
 
 * * *
 
