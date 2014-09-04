@@ -1,7 +1,9 @@
-x37v.info
-=======
+# x37v.info
 
 My personal web page.
 
 Using [Jekyll](http://jekyllrb.com/) to build
 
+## Requirements
+* ruby
+* gem install jekyll coderay RedCloth coderay
