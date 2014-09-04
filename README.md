@@ -1,4 +1,7 @@
-webpage
+x37v.info
 =======
 
-my personal webpage
+My personal web page.
+
+Using [Jekyll](http://jekyllrb.com/) to build
+
