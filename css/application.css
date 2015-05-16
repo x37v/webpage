@@ -18,7 +18,7 @@ p,li,th,td
 }
 
 #bgcanvas {
-	display: none;
+  display: none;
   background: white;
   width: 100px;
   height: 100px;
@@ -161,5 +161,58 @@ div#main ul {
 pre {
   font-size: 9pt;
   margin: 0;
+}
+
+.blog .heading-block {
+  /*
+  position: relative;
+  width: 100%;
+  display: table-row;
+  table-layout: fixed;
+  margin-left: 0;
+  margin-right: 0;
+  */
+}
+
+.blog .heading {
+  float: left;
+  /*
+  display: table-cell;
+  */
+}
+
+.blog .rss-subscribe {
+  float: right;
+  /*
+  display: table-cell;
+  vertical-align: center;
+  text-align: right;
+  margin-right: 0px;
+  margin-left: auto;
+  */
+}
+
+.blog .wrap {
+  clear: both;
+}
+
+.blog .post {
+  padding-bottom: 20px;
+}
+
+.blog .post .heading {
+  width: 100%;
+}
+
+.blog .post .heading .title {
+  float: left;
+}
+
+.blog .post .heading .date {
+  float: right;
+}
+
+.blog .post .content {
+  clear: both;
 }
 

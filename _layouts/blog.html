@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+	<body class="blog">
+			<div id="page-container">
+				{% include header.html %}
+
+				<div class="page-content">
+					<div class="heading-block">
+						<div class="heading">
+							{% if page.url != "/" and page.url != "/index.html" %}
+							<header class="post-header">
+								<h1>{{ page.title }}</h1>
+							</header>
+							{% endif %}
+						</div>
+						<div class="rss-subscribe">
+							subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+						</div>
+					</div>
+
+					<div class="wrap">
+					{{ content }}
+					</div>
+				</div>
+
+				{% include footer.html %}
+			</div>
+
+			<canvas id="bgcanvas"></canvas>
+			<script type="application/x-javascript">
+				$(document).ready(function(){
+					var canvas = document.getElementById("bgcanvas");
+					
+					var w = canvas.width = 100;
+					var h = canvas.height = 100;
+					
+					var context = canvas.getContext("2d");
+					context.fillStyle = "black";
+					for(i=0;i<w / 2;i++) {
+						var a = Math.floor(Math.random()*w);
+						var b = Math.floor(Math.random()*h);
+						var c = Math.floor(Math.random()*w);
+						var d = Math.floor(Math.random()*h);
+						context.beginPath();
+						/*
+						context.moveTo(0, a);
+						context.lineTo(b, h);
+						context.lineTo(w, c);
+						context.lineTo(d, 0);
+						context.closePath();
+						*/
+						context.moveTo(a, b);
+						context.lineTo(c, d);
+						context.stroke();
+					}
+				$('body').css({'background-image':"url(" + canvas.toDataURL("image/png")+ ")"});
+				});
+			</script>
+		</body>
+</html>
