@@ -9,6 +9,14 @@ tags:
 ---
 
 [Bed of Roses](http://bedofrosesblog.tumblr.com/) posted a [DJ mix I made](http://tmblr.co/ZxyKor1ktgoN9) ([soundcloud](https://soundcloud.com/bed_of_roses-1/bed-of-roses-podcast-xviii-xnor)) this past month.
+
+<center>
+
+<img src="http://bedofrosesentertainment.com/images/podcast18xnor.jpg" width="200" height="200" />
+<br>Photo by <a href="http://tara-swenson.tumblr.com/">Tara Swenson</a> 2014
+
+</center>
+
+<!--more-->
+
 I used [Data Jockey](http://www.x37v.info/projects/datajockey/), the f/loss DJ software I have been writing for a few years.  Direct source code link: [github repo](https://github.com/x37v/datajockey).
-<br><img src="http://bedofrosesentertainment.com/images/podcast18xnor.jpg" width="200" height="200" />
-<br>Photo by [Tara Swenson](http://tara-swenson.tumblr.com/) 2014

@@ -10,6 +10,8 @@ tags:
 ---
 The band "STRFKR":http://www.polyvinylrecords.com/artists/index.php?id=824 hired Hans Lindauer and me to create a large [13 x 8 ft] low resolution [96 x 64 bright RGB pixels] video display for their live show.
 
+<!--more-->
+
 Hans did a wonderful job designing and building the wall and I worked on the software.
 
 We chose to drive the wall with composite video so that the band could hook up a variety of different video sources to the wall.  Basically, anything that outputs composite video should work.  The bulk of the work is done by a small computer running Linux with a composite video to USB adapter for video input and a "teensy":http://www.pjrc.com/teensy/ USB microcontroller to drive the LEDs.  The computer uses "GStreamer":http://gstreamer.freedesktop.org/ to take the video input, convert it from YUYV to RGB, deinterlace it, resize it to 96 x 64, and finally, using a custom video sink, write out data packets to via USB to the _teensy_.

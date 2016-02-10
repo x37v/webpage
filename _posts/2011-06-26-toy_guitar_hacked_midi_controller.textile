@@ -12,6 +12,8 @@ I found this guitar toy at a thrift store a few months back and decided to hack 
 
 I used a "teensy,":http://www.pjrc.com/teensy/ and library I wrote called "xnormidi,":http://x37v.info/projects/xnormidi which in turn uses "LUFA":http://www.fourwalledcubicle.com/LUFA.php to do the usb layer.
 
+<!--more-->
+
 I've placed the code on "github":https://github.com/x37v/toy_guitar_midi if anyone is curious.  It might not be immediately useful but it does provide an example usage of the midi library.  I also have some debouncing code in there that could be pulled into another project.
 
 Interfacing with the toy was actually not very difficult.  Internally it had a microcontroller board that loaded like a slot into another board that had the panel mount buttons and a bus to the neck buttons.  I simply de-soldered and removed that microcontroller board, figured out the addressing scheme of the buttons, which used a typical matrix scanning scheme, and wrote some code drive + read the matrix.  I had some extra I/O so I hooked in the switch and maybe one more button on the body that wasn't driven by the matrix.

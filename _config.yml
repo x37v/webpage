@@ -7,6 +7,9 @@ url: "http://www.x37v.info"
 #twitter_username: jekyllrb
 github_username:  x37v
 
+#blog settings
+excerpt_separator: <!--more-->
+
 # Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/

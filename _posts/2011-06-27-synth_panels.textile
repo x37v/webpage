@@ -10,6 +10,8 @@ My friend/roommate "Jesse":http://www.anestheticaudio.com/ and I have been build
 
 Recently I got a new job and now have access to a laser cutter.  It is a lot of fun to play with and is proving to be very nice for making panels for our modules.  So far I've only created a couple of prototypes, to make sure that my measurements are all correct.
 
+<!--more-->
+
 Our friend Alex Langeburg designed us some graphics and has helped us with some design considerations.  I'm using "inkscape":http://inkscape.org/ for the layout.
 
 My first prototype used some translucent pink/orange acrylic, I painted it flat black and then etched the paint off and cut it with the laser.  I really like the color but I don't think it'll work well with the rest of the colors I have for jacks, knobs, cabling and what not.
