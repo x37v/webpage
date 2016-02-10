@@ -13,7 +13,9 @@ permalink: /blog/:year/:month/:day/:title/
 
 #plugins
 #gems: [jekyll-haml]
-gems: [coderay]
+gems:
+  - coderay
+  - jekyll-textile-converter
 
 git_path: http://git-scm.com/
 gpl_path: http://www.gnu.org/licenses/gpl.html
