@@ -26,7 +26,7 @@ desk phone, but then Karl/Elijah hooked me up with this really nice courtesy
 phone, so I went with that.
 
 The phone enclosure is made of reclaimed wood from my fence, some yard refuse,
-and a piece of free roofing I got from a bar. I build a small light out of
+and a piece of free roofing I got from a bar. I built a small light out of
 some spare LEDs I had and some frosted plastic that a friend left over at
 my place. I think the enclosure has a somewhat outhouse or chicken-coop
 look to it, which I'm pretty into.
