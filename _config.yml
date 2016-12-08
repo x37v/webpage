@@ -7,6 +7,8 @@ url: "http://www.x37v.info"
 #twitter_username: jekyllrb
 github_username:  x37v
 
+include: [".well-known"]
+
 #blog settings
 excerpt_separator: <!--more-->
 

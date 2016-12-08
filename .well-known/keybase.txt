@@ -1,0 +1,51 @@
+https://keybase.io/xnor
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://x37v.info
+  * I am xnor (https://keybase.io/xnor) on keybase.
+  * I have a public key ASCIi8vciz3FYt8jCJp-tnuDrcsZWNVF1XC9_5LqotWIUAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120aacf1c254732315e24c17d2d538bd84fd2100ca45152edac40091a7e2b53ad750a",
+            "host": "keybase.io",
+            "kid": "0120888bcbdc8b3dc562df23089a7eb67b83adcb1958d545d570bdff92eaa2d588500a",
+            "uid": "30fca33be638a1cd277cb2b1f4b1ad19",
+            "username": "xnor"
+        },
+        "service": {
+            "hostname": "x37v.info",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1481162820,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1481162696,
+        "hash": "0d9d79b0233a702c49141251d9a245395728dc1e8f3093da5ae8f8ab56371cee589c47e268c7fdb36406a12a1da9f74daed8322e7175e7f507140ec387916b4c",
+        "seqno": 752393
+    },
+    "prev": "4650ea4e37a402e4c64d50b2c72cfb275545c7413c3d940278cd760d1cc789b4",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgiIvL3Is9xWLfIwiafrZ7g63LGVjVRdVwvf+S6qLViFAKp3BheWxvYWTFAu17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYWFjZjFjMjU0NzMyMzE1ZTI0YzE3ZDJkNTM4YmQ4NGZkMjEwMGNhNDUxNTJlZGFjNDAwOTFhN2UyYjUzYWQ3NTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODg4YmNiZGM4YjNkYzU2MmRmMjMwODlhN2ViNjdiODNhZGNiMTk1OGQ1NDVkNTcwYmRmZjkyZWFhMmQ1ODg1MDBhIiwidWlkIjoiMzBmY2EzM2JlNjM4YTFjZDI3N2NiMmIxZjRiMWFkMTkiLCJ1c2VybmFtZSI6Inhub3IifSwic2VydmljZSI6eyJob3N0bmFtZSI6IngzN3YuaW5mbyIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODExNjI4MjAsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4MTE2MjY5NiwiaGFzaCI6IjBkOWQ3OWIwMjMzYTcwMmM0OTE0MTI1MWQ5YTI0NTM5NTcyOGRjMWU4ZjMwOTNkYTVhZThmOGFiNTYzNzFjZWU1ODljNDdlMjY4YzdmZGIzNjQwNmExMmExZGE5Zjc0ZGFlZDgzMjJlNzE3NWU3ZjUwNzE0MGVjMzg3OTE2YjRjIiwic2Vxbm8iOjc1MjM5M30sInByZXYiOiI0NjUwZWE0ZTM3YTQwMmU0YzY0ZDUwYjJjNzJjZmIyNzU1NDVjNzQxM2MzZDk0MDI3OGNkNzYwZDFjYzc4OWI0Iiwic2Vxbm8iOjExLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQOSdKuoTSJ7HYdk1dWAHL9hoYS9KlBXIY3dkc+e/YpKBlrAYSITHf1KZsq4+zX+BQZl3RxcSFBTyaUv1uWy6oQCoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCA0HMbTYVecKGEE6aau8aAmJ80b5mFf35MHHpPB+YaNr6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xnor
