@@ -6,4 +6,4 @@ Using [Jekyll](http://jekyllrb.com/) to build
 
 ## Requirements
 * ruby
-* gem install jekyll coderay RedCloth coderay haml
+* gem install jekyll coderay RedCloth coderay haml jekyll-textile-converter
