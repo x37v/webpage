@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll build && rsync -vPar --delete _site/ arachne:x37v.info/
+bundle exec jekyll build && rsync -vPar --delete _site/ arachne:x37v.info/
